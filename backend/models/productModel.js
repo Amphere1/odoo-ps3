@@ -80,12 +80,6 @@ const productSchema = new mongoose.Schema({
         lowercase: true,
         maxLength: [50, "Each tag cannot exceed 50 characters"]
     }],
-    currency: {
-        type: String,
-        default: 'USD',
-        uppercase: true,
-        maxLength: [3, "Currency code should be 3 characters"]
-    },
     inStock: {
         type: Boolean,
         default: true

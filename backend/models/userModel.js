@@ -28,7 +28,19 @@ const userSchema = new mongoose.Schema({
     UpdatedAt:{
         type: Date,
         default: Date.now
-    }
+    },
+    points:{
+        type: Number,
+        default: 0
+    },
+    myPurchases:[{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Product'
+    }],
+    mylistings:[{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Product'
+    }]
 });
 
 
