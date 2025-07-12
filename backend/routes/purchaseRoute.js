@@ -1,6 +1,6 @@
 import express from 'express';
 import Product from '../models/productModel.js';
-import User from '../models/usermodel.js';
+import User from '../models/userModel.js';
 import PurchaseRequest from '../models/purchaseRequestModel.js';
 import verifyToken from '../middleware/auth.js';
 
